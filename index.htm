@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+          <meta charset="UTF-8">
+
+          <title>JQ Document</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style type="text/css">
+	p{
+		color:red;
+		margin: 5px;
+		cursor: pointer;
+	}
+	p:hover{
+		background: yellow;
+
+	}
+	.zenbo{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 10;
+		background: rgba(0,0,0,0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+
+
+</style>
+
+
+</head>
+<body>
+	<p>產品介紹</p>
+	<h1>智慧型貓貓玩偶</h1>
+	<div class="zenbo">
+		<img src="https://image.presslogic.com/cats.presslogic.com/wp-content/uploads/2019/07/chavata2023_62391275_397063590901618_4038306242596665738_n-1.jpg">
+	</div>
+
+	<script type="text/javascript">
+		$('p').click(function(){
+			$('.zenbo').slideToggle();
+			});
+					$('img').click(function(){
+						
+			$('.zenbo').slideToggle();
+		});
+
+	</script>
+
+
+<body>
+</html>
